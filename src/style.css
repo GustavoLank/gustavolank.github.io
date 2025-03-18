@@ -110,7 +110,7 @@ p {
 li {
   font-size: 20px;
   font-weight: 400;
-  margin: 12px 0px;
+  margin: 18px 0px;
 }
 
 li::marker {
@@ -120,6 +120,8 @@ li::marker {
 ul {
   margin-top: 20px;
   margin-bottom: 20px;
+  list-style-position: inside;
+  padding-left: 0px;
 }
 
 .goto-button {
@@ -176,7 +178,7 @@ ul {
 }
 
 .checkout {
-  width: 400px;
+  width: 450px;
   margin: 0 32px;
   padding: 24px;
   background-color: #f5f7fa;
@@ -229,6 +231,18 @@ ul {
 
 .red {
   color: #E1011C;
+}
+
+.cyan {
+  color: #4cac9d;
+}
+
+.orange {
+  color: #f58523;
+}
+
+.gold {
+  color: #c9b469;
 }
 
 .line-through {
@@ -300,6 +314,10 @@ div.divider {
   flex: 0.5;
 }
 
+.flex-3 {
+  flex: 0.25;
+}
+
 .bold {
   font-weight: 600;
 }
@@ -355,6 +373,17 @@ div.divider {
     margin-left: 0;
     max-width: 300px;
     margin-bottom: 24px;
+  }
+}
+
+.warranty {
+  width: 250px;
+  margin-right: 80px;
+}
+
+@media (max-width: 900px) {
+  .warranty {
+    margin-right: 0;
   }
 }
 
