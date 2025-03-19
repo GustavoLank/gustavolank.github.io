@@ -117,6 +117,10 @@ li::marker {
   content: '✅';
 }
 
+li.gift::marker {
+  content: '🎁';
+}
+
 ul {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -298,8 +302,16 @@ div.divider {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-big {
   font-size: 24px;
+}
+
+.text-48px {
+  font-size: 48px;
 }
 
 .flex {
@@ -342,6 +354,10 @@ div.divider {
   }
 }
 
+.gap-1 {
+  gap: 32px;
+}
+
 .hv-responsive {
   flex-direction: row;
 }
@@ -358,6 +374,16 @@ div.divider {
 
 @media (max-width: 900px) {
   .side-image-responsive {
+    flex-direction: column;
+  }
+}
+
+.side-image-responsive-rev {
+  flex-direction: row;
+}
+
+@media (max-width: 900px) {
+  .side-image-responsive-rev {
     flex-direction: column-reverse;
   }
 }
@@ -374,6 +400,40 @@ div.divider {
     max-width: 300px;
     margin-bottom: 24px;
   }
+}
+
+.feature-card {
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 24px;
+  background-color: #e4e9ee;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .feature-card {
+    width: 100%;
+  }
+}
+
+.feature-image {
+  width: 360px;
+  margin-right: 64px;
+}
+
+@media (max-width: 900px) {
+  .feature-image {
+    width: 90%;
+    margin-right: 0;
+  }
+}
+
+.bonus-title {
+  margin-top: 24px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 3px solid #c9b469;
 }
 
 .warranty {
