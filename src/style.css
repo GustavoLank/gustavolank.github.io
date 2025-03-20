@@ -200,6 +200,9 @@ a:visited {
   box-shadow: 0 1px 3px hsl(0 0% 0% / .2);
   text-decoration: inherit;
 }
+.checkout-button:visited {
+  color: #f5f7fa;
+}
 .checkout-button:hover {
   filter: drop-shadow(0 0 5px #df4e5f);
   transform: scale3d(1.048, 1.048, 1.048);
