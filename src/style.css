@@ -219,7 +219,7 @@ a:visited {
   font-weight: 700;
   font-family: inherit;
   color: #f5f7fa;
-  background-color: #df4e5f;
+  background-color: #E1011C;
   align-self: center;
   cursor: pointer;
   transition: filter 0.25s, transform 0.25s;
@@ -554,6 +554,7 @@ div.divider {
   margin-top: 56px;
   width: 100%;
   align-items: center;
+  max-width: 600px;
 }
 
 .warranty {
