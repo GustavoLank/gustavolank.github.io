@@ -137,6 +137,10 @@ ul {
   padding-left: 0px;
 }
 
+ul.left-pad {
+  padding-left: 20px;
+}
+
 blockquote {
   border: 1px solid #EBE9E3;
   border-left: 10px solid #EBE9E3;
