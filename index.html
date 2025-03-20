@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de Vendas</title>
     <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <script>
       const goToCheckout = () => {
@@ -24,17 +27,21 @@
     </section>
 
     <section class="section-1">
-      <div class="side-image-responsive-rev">
-        <div class="flex-1">
-          <h2>
-            SERVIDOR PÚBLICO, LIVRE-SE DAS DÍVIDAS DE UMA VEZ POR TODAS E RECUPERE SUA TRANQUILIDADE FINANCEIRA!
-          </h2>
-          <p>
-            Um método passo a passo, criado especialmente para servidores públicos, que já ajudou muitos a quitarem suas dívidas e reconquistarem a paz financeira. Agora é a sua vez!
-          </p>
-        </div>
-        <div class="flex-2 align-center">
-          <img src="/public/vencendo-as-dividas-livro.png" class="book-cape"/>
+      <div class="w-full justify-center">
+        <div style="max-width: 1024px;">
+          <div class="side-image-responsive-rev row flex gap-1">
+            <div class="flex-1 flex column justify-center">
+              <h2 style="font-size: 44px;">
+                <strong>SERVIDOR PÚBLICO, LIVRE-SE DAS DÍVIDAS DE UMA VEZ POR TODAS E RECUPERE SUA TRANQUILIDADE FINANCEIRA!</strong>
+              </h2>
+              <p>
+                Um método passo a passo, criado especialmente para servidores públicos, que já ajudou muitos a quitarem suas dívidas e reconquistarem a paz financeira. Agora é a sua vez!
+              </p>
+            </div>
+            <div class="flex-2 flex justify-center">
+              <img src="/public/vencendo-as-dividas-livro.png" class="book-cape"/>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -43,12 +50,29 @@
       <div class="w-full column align-start">
         <p class="bold text-24px">Você não está sozinho nessa luta</p>
         <p>
-          Todo mês é a mesma história: seu salário cai na conta e, em poucos dias, praticamente já evaporou em parcelas, empréstimos e contas atrasadas. Você mal recebe o contracheque e boa parte dele já está comprometida com dívidas – <strong>e parece que elas só aumentam, não importa o que você faça</strong>. <i>Isso soa familiar?</i>
+          Todo mês é a mesma história: o salário cai na conta e, em poucos dias, praticamente já evaporou em parcelas, empréstimos e contas atrasadas. Mal recebe o contracheque e boa parte dele já está comprometida com dívidas – <strong>e parece que elas só aumentam, não importa o que faça</strong>. <i>Isso soa familiar?</i>
         </p>
         <p>
           Se você é <span class="red bold">servidor público</span> e se sente sufocado pelas dívidas, <strong>saiba que você não está sozinho</strong>. Na verdade, pesquisas mostram que cerca de <strong>70% dos servidores públicos ativos no Brasil estão endividados</strong>. Isso mesmo: a maioria! Ou seja, o que você está passando é mais comum do que parece – mas nem por isso menos doloroso.
         </p>
+        <p>
+          <strong>As dívidas afetam muito mais do que seu bolso</strong>: elas tiram seu sono, geram ansiedade e podem prejudicar tanto sua carreira quanto seus relacionamentos pessoais. Cada boleto atrasado ou ligação de cobrança é um lembrete constante do problema, causando estresse e até mesmo aquela sensação de vergonha ou fracasso. É ou não é verdade?
+        </p>
+        <p>
+          Mesmo com a estabilidade de um salário fixo, o endividamento pode acontecer. Afinal, <strong>nunca nos ensinaram educação financeira na escola</strong> e é fácil acabar caindo em armadilhas como crédito fácil, empréstimos consignados em excesso e uso incorreto do cartão de crédito. <span class="red bold">Não é falta de esforço ou caráter – é falta de orientação adequada.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div class="w-full justify-center column">
+        <h2 class="text-48px red">NÃO PRECISA SER ASSIM!!</h2>
         <div class="price-card-container">
+          <div class="flex flex-1 column">
+            <p>
+              A boa notícia é que <strong>há uma saída</strong>. Por mais difícil que pareça a situação agora, existe uma maneira de virar esse jogo a seu favor. E não, a solução não é simplesmente “ganhar mais dinheiro” ou fazer outro empréstimo milagroso (isso pode até piorar o problema, como tentar “tampar um balde furado”). <strong>A verdadeira solução é adquirir conhecimento financeiro prático e aplicar um método comprovado para reorganizar suas finanças.</strong>
+            </p>
+          </div>
           <div class="price-card">
             <p style="margin: 0;">De <span class="line-through">R$ 47,90</span></p>
             <p style="margin: 0;">Por somente</p>
@@ -57,30 +81,12 @@
             <button
               class="goto-button"
               onclick="goToCheckout()"
-              style="margin: 0; filter: none; box-shadow: none; background-color: #e7405c;"
+              style="margin: 0; filter: none; box-shadow: none; background-color: #fc4741;"
             >
               QUERO SAIR DAS DÍVIDAS
             </button>
           </div>
-          <div class="flex flex-1 column">
-            <p>
-              <strong>As dívidas afetam muito mais do que seu bolso</strong>: elas tiram seu sono, geram ansiedade e podem prejudicar tanto sua carreira quanto seus relacionamentos pessoais. Cada boleto atrasado ou ligação de cobrança é um lembrete constante do problema, causando estresse e até mesmo aquela sensação de vergonha ou fracasso. É ou não é verdade?
-            </p>
-            <p>
-              Mesmo com a estabilidade de um salário fixo, o endividamento pode acontecer. Afinal, <strong>nunca nos ensinaram educação financeira na escola</strong> e é fácil acabar caindo em armadilhas como crédito fácil, empréstimos consignados em excesso e uso incorreto do cartão de crédito. <span class="red bold">Não é falta de esforço ou caráter – é falta de orientação adequada.</span>
-            </p>
-          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section-3">
-      <div class="w-full justify-center column">
-        <h2 class="text-48px red">NÃO PRECISA SER ASSIM!!</h2>
-        <p>
-          A boa notícia é que <strong>há uma saída</strong>. Por mais difícil que pareça a situação agora, existe uma maneira de virar esse jogo a seu favor. E não, a solução não é simplesmente “ganhar mais dinheiro” ou fazer outro empréstimo milagroso (isso pode até piorar o problema, como tentar “tampar um balde furado”). <strong>A verdadeira solução é adquirir conhecimento financeiro prático e aplicar um método comprovado para reorganizar suas finanças.</strong>
-        </p>
-        <button class="goto-button" onclick="goToCheckout()">👉 QUERO O E-BOOK AGORA</button>
       </div>
     </section>
 
@@ -90,17 +96,32 @@
           “Chegou a hora de dar um basta ao ciclo de endividamento e retomar as rédeas da sua vida financeira. E nós temos a ferramenta certa para ajudar você nessa jornada”
         </h3>
         <h2 class="red text-center">VENCENDO AS DÍVIDAS – A SOLUÇÃO DEFINITIVA PARA VIRAR O JOGO</h2>
+        <div class="flex w-full align-center">
+          <img src="/public/vencendo-as-dividas-livro-2.png" width="500px">
+        </div>
         <p>
-          O <strong>e-book <i>Vencendo as Dívidas</i></strong>, é um guia completo feito de <strong>servidor público para servidor público</strong> que vai ajudar você a transformar suas finanças e eliminar de vez o peso das dívidas. <span class="red">Este <strong>não é apenas mais um livro de teoria chata sobre dinheiro</strong></span> – é um <strong>programa prático e comprovado</strong> que vai <strong>guiar você, passo a passo</strong>, do sufoco à tranquilidade financeira.
+          O <strong>e-book <i>Vencendo as Dívidas</i></strong>, é um guia completo feito de <strong>servidor público para servidor público</strong> que vai ajudar você a transformar suas finanças e eliminar de vez o peso das dívidas. <span class="red bold">Este não é apenas mais um livro de teoria chata sobre dinheiro</span> – é um <strong>programa prático e comprovado</strong> que vai <strong>guiar você, passo a passo</strong>, do sufoco à tranquilidade financeira.
         </p>
         <p>
           No <span class="red"><i>Vencendo as Dívidas</i></span>, você vai encontrar <strong>tudo o que precisa para sair do vermelho</strong>:
         </p>
-        <ul class="left-pad">
-          <li><strong>Organizar suas finanças pessoais</strong> – aprender a fazer um orçamento claro, controlar gastos e parar de criar novas dívidas.</li>
-          <li><strong>Mapear todas as suas dívidas</strong> – ter uma visão completa de quanto deve, a quem deve e quanto paga de juros em cada dívida (sem mais surpresas).</li>
-          <li><strong>Eliminar as dívidas uma a uma</strong> – seguir um plano estratégico para quitar débitos, <strong>negociar com credores</strong>, trocar dívidas caras por mais baratas e <strong>se livrar de vez</strong> das contas em atraso.</li>
-        </ul>
+        <div class="flex w-full hv-responsive gap-1 mv-6">
+          <div class="benefits-card">
+            <ion-icon name="calculator" size="large" style="color: #E1011C;"></ion-icon>
+            <p class="bold text-24px">Organizar suas finanças pessoais</p>
+            <p>Aprender a fazer um orçamento claro, controlar gastos e parar de criar novas dívidas.</p>
+          </div>
+          <div class="benefits-card">
+            <ion-icon name="map" size="large" style="color: #E1011C;"></ion-icon>
+            <p class="bold text-24px">Mapear todas as suas dívidas</p>
+            <p>Ter uma visão completa de quanto deve, a quem deve e quanto paga de juros em cada dívida (sem mais surpresas).</p>
+          </div>
+          <div class="benefits-card">
+            <ion-icon name="wallet" size="large" style="color: #E1011C;"></ion-icon>
+            <p class="bold text-24px">Eliminar as dívidas uma a uma</p>
+            <p>Seguir um plano estratégico para quitar débitos, <strong>negociar com credores</strong>, trocar dívidas caras por mais baratas e <strong>se livrar de vez</strong> das contas em atraso.</p>
+          </div>
+        </div>
         <p>
           Tudo isso foi desenvolvido <strong>pensando na realidade do servidor público endividado</strong>. O conteúdo considera as particularidades da sua situação – diferente de materiais genéricos de finanças por aí.
         </p>
@@ -120,7 +141,7 @@
 
     <section class="section-1">
       <div class="w-full column gap-1">
-        <h2 class="red-underline">O QUE VOCÊ VAI RECEBER AO ADQUIRIR <span class="red">VENCENDO AS DÍVIDAS</span></h2>
+        <h2>O QUE VOCÊ VAI RECEBER AO ADQUIRIR <span class="red">VENCENDO AS DÍVIDAS</span></h2>
         <div class="feature-card side-image-responsive">
           <div class="flex-2 flex justify-center">
             <img src="/public/vencendo-as-dividas-e-book.png" class="feature-image"/>
@@ -132,7 +153,7 @@
         </div>
         <div class="feature-card side-image-responsive">
           <div class="flex-2 flex justify-center">
-            <img src="/public/vencendo-as-dividas-planilha-workbook.png" class="feature-image"/>
+            <img src="/public/vencendo-as-dividas-ferramentas.png" class="feature-image"/>
           </div>
           <div class="flex-1 text-right">
             <h2 class="red text-48px">Workbook “Vencendo as Dívidas”</h2>
@@ -141,7 +162,7 @@
         </div>
         <div class="feature-card side-image-responsive">
           <div class="flex-2 flex justify-center">
-            <img src="/public/vencendo-as-dividas-planilha-workbook.png" class="feature-image"/>
+            <img src="/public/vencendo-as-dividas-planilha.png" class="feature-image"/>
           </div>
           <div class="flex-1 text-right">
             <h2 class="red text-48px">Planilha Excel COMPLETA</h2>
@@ -155,7 +176,7 @@
         <button class="goto-button goto-button-dark" onclick="goToCheckout()">QUERO POR R$ 14,97</button>
 
         <div class="bonus-title">
-          <h2 class="text-center gold">PACOTE ESPECIAL</h2>
+          <img src="/public/pacote-especial.png" width="100%">
         </div>
         <p class="text-24px">
           <span class="red bold">Oferta por Tempo Limitado:</span> Além do e-book principal e suas ferramentas, ao adquirir <strong>hoje</strong> o <i>Pacote Especial do Vencendo as Dívidas</i>, você pode levar também, <i>por um preço especial de lançamento</i>, mais <strong>3 materiais exclusivos</strong> para turbinar ainda mais sua virada financeira:
@@ -190,7 +211,7 @@
         </div>
 
         <p class="text-24px">
-          <i>Lembrando</i>: Esse pacote <strong>exclusivo tem o preço especial de lançamento</strong> Eles foram incluídos como forma de agregar ainda mais valor e agradecer a você por dar este passo decisivo agora. Contudo, essa oferta não ficará disponível para sempre – então aproveite enquanto esses materiais extras estão liberados com preço de lançamento.
+          <i>Lembrando</i>: Esse pacote <strong>exclusivo tem o preço especial de lançamento</strong>. Eles foram incluídos como forma de agregar ainda mais valor e agradecer a você por dar este passo decisivo agora. Contudo, essa oferta não ficará disponível para sempre – então aproveite enquanto esses materiais extras estão liberados com preço de lançamento.
         </p>
 
         <button class="goto-button goto-button-dark" onclick="goToCheckout()">QUERO GARANTIR O PACOTE ESPECIAL</button>
@@ -199,7 +220,7 @@
 
     <section class="section-2">
       <div class="w-full column align-start">
-        <h2 class="red-underline text-center">BENEFÍCIOS DO <i>VENCENDO AS DÍVIDAS</i></h2>
+        <h2 class="text-center">BENEFÍCIOS DO <i>VENCENDO AS DÍVIDAS</i></h2>
         <p>
           Ao investir no <i>Vencendo as Dívidas</i>, você não estará apenas comprando um e-book – estará dando o primeiro passo para uma <strong>transformação profunda</strong> na sua vida financeira. Veja alguns dos <strong>benefícios claros e tangíveis</strong> que este programa proporcionará:
         </p>
@@ -223,7 +244,7 @@
           <img src="/public/garantia.png" class="warranty"/>
         </div>
         <div class="flex-1">
-          <h2 class="gold-underline">GARANTIA INCONDICIONAL DE 7 DIAS</h2>
+          <h2>GARANTIA INCONDICIONAL DE 7 DIAS</h2>
           <p>
             Nós acreditamos tanto na qualidade e nos resultados do <span class="red"><i>Vencendo as Dívidas</i></span> que oferecemos uma <strong>Garantia Incondicional de 7 Dias</strong>. Isso mesmo: você pode adquirir o e-book hoje, consumir todo o material e, se dentro de 7 dias achar que ele não é para você ou não atender às suas expectativas, <strong>basta solicitar o reembolso</strong>. Devolveremos <strong>100% do seu dinheiro, sem burocracia e sem perguntas</strong>.
           </p>
@@ -239,7 +260,7 @@
 
     <section class="section-2">
       <div class="w-full column align-start">
-        <h2 class="red-underline text-center">APROVEITE ESTA OFERTA DE LANÇAMENTO</h2>
+        <h2 class="text-center">APROVEITE ESTA OFERTA DE LANÇAMENTO</h2>
         <p>
           No momento, o <i>Vencendo as Dívidas</i> está disponível por um <strong>preço promocional de lançamento</strong> com o <strong>pacote especial</strong>. Essa é a sua oportunidade de obter um pacote completo de transformação financeira por um investimento muito menor do que as suas dívidas atuais custam em juros todo mês.
         </p>
@@ -270,9 +291,9 @@
               <h2 class="green extrabold m-0"><small>por</small> R$ 14,97</h2>
               <div class="flex align-start w-full">
                 <ul>
-                  <li class="check">E-book – <span class="red bold">Vencendo as Dívidas</span></li>
-                  <li class="check">Workbook – <span class="red bold">Vencendo as Dívidas</span></li>
-                  <li class="check">Planilha Excel COMPLETA - <span class="red bold">Vencendo as Dívidas</span></li>
+                  <li class="check"><span class="bold">E-book</span> – Vencendo as Dívidas</li>
+                  <li class="check"><span class="bold">Workbook</span> – Vencendo as Dívidas</li>
+                  <li class="check"><span class="bold">Planilha Excel COMPLETA</span> - Vencendo as Dívidas</li>
                 </ul>
               </div>
               <div class="flex h-full column justify-end">
@@ -290,12 +311,12 @@
               <h2 class="green extrabold m-0"><small>por</small> R$ 37,90</h2>
               <div class="flex align-start w-full">
                 <ul>
-                  <li class="check">E-book – <span class="red bold">Vencendo as Dívidas</span></li>
-                  <li class="check">Workbook – <span class="red bold">Vencendo as Dívidas</span></li>
-                  <li class="check">Planilha Excel COMPLETA - <span class="red bold">Vencendo as Dívidas</span></li>
-                  <li class="gift">E-book – <span class="cyan bold">15 Vieses que devemos EVITAR nas Escolhas Financeiras</span></li>
-                  <li class="gift">E-book – <span class="orange bold">Como usar o Empréstimo Consignado a Seu Favor</span></li>
-                  <li class="gift">E-book – <span class="gold bold">Mente Próspera – A Força da Piscicologia Financeira</span></li>
+                  <li class="check"><span class="bold">E-book</span> – Vencendo as Dívidas</li>
+                  <li class="check"><span class="bold">Workbook</span> – Vencendo as Dívidas</li>
+                  <li class="check"><span class="bold">Planilha Excel COMPLETA</span> - Vencendo as Dívidas</li>
+                  <li class="gift"><span class="bold">E-book</span> – 15 Vieses que devemos EVITAR nas Escolhas Financeiras</li>
+                  <li class="gift"><span class="bold">E-book</span> – Como usar o Empréstimo Consignado a Seu Favor</li>
+                  <li class="gift"><span class="bold">E-book</span> – Mente Próspera: A Força da Piscicologia Financeira</li>
                 </ul>
               </div>
               <a class="checkout-button" href="https://facilitadorfinanceiro.com.br">
@@ -309,7 +330,7 @@
     </section>
 
     <section class="section-1 column">
-      <h2 class="red-underline text-center">QUEM SOU EU?</h2>
+      <h2 class="text-center">QUEM SOU EU?</h2>
       <div class="w-full gap-1 align-start hv-responsive">
         <div class="column flex-1 align-start justify-start gap-1">
           <div style="border-left: #E1011C solid 8px;">
@@ -334,14 +355,13 @@
           <p class="bold text-24px text-center">
             Agora quero ajudar <span class="red">VOCÊ</span> a <span class="red">VIRAR A CHAVE</span> e se livrar de uma vez por todas das dívidas, e mudar o rumo da sua vida financeira.
           </p>
-          <img loading="lazy" decoding="async" width="100%" src="https://www.guiadasfinancas.com.br/wp-content/uploads/2023/02/Palestra.png">
         </div>
       </div>
     </section>
 
     <section class="section-2">
       <div class="w-full column align-start">
-        <h2 class="red-underline text-center">PERGUNTAS FREQUENTES (FAQ)</h2>
+        <h2 class="text-center">PERGUNTAS FREQUENTES (FAQ)</h2>
 
         <h4>
           P: Este e-book serve para qualquer servidor público endividado?
@@ -406,5 +426,8 @@
         <br>
       </div>
     </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

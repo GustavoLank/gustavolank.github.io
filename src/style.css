@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 * {
   box-sizing: border-box;
@@ -115,19 +116,41 @@ li {
 }
 
 li.check {
+  display: block;
+  list-style: none;
   list-style-position: inside;
+  position: relative;
+  padding-left: 1.5em;
 }
 
 li.gift {
-  list-style-position: inside;
+  display: block;
+  list-style: none;
+  list-style-position: outside;
+  position: relative;
+  padding-left: 1.75em;
 }
 
-li.check::marker {
-  content: '✅';
+li.check::before {
+  content: '';
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 1em;
+	height: 1em;
+	background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0ndHJ1ZScgZm9jdXNhYmxlPSdmYWxzZScgZGF0YS1wcmVmaXg9J2Zhcycgcm9sZT0naW1nJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1MTIgNTEyJz48cGF0aCBmaWxsPScjMmNkMTU2JyBkPSdNNTA0IDI1NmMwIDEzNi45NjctMTExLjAzMyAyNDgtMjQ4IDI0OFM4IDM5Mi45NjcgOCAyNTYgMTE5LjAzMyA4IDI1NiA4czI0OCAxMTEuMDMzIDI0OCAyNDh6TTIyNy4zMTQgMzg3LjMxNGwxODQtMTg0YzYuMjQ4LTYuMjQ4IDYuMjQ4LTE2LjM3OSAwLTIyLjYyN2wtMjIuNjI3LTIyLjYyN2MtNi4yNDgtNi4yNDktMTYuMzc5LTYuMjQ5LTIyLjYyOCAwTDIxNiAzMDguMTE4bC03MC4wNTktNzAuMDU5Yy02LjI0OC02LjI0OC0xNi4zNzktNi4yNDgtMjIuNjI4IDBsLTIyLjYyNyAyMi42MjdjLTYuMjQ4IDYuMjQ4LTYuMjQ4IDE2LjM3OSAwIDIyLjYyN2wxMDQgMTA0YzYuMjQ5IDYuMjQ5IDE2LjM3OSA2LjI0OSAyMi42MjguMDAxeic+PC9wYXRoPjwvc3ZnPg==");
 }
 
-li.gift::marker {
-  content: '🎁';
+li.gift::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1.25em;
+  height: 1.25em;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSdub25lJyBkPSJNMjAwIDE0NGg0MHYtNDBhNDAgNDAgMCAxMC00MCA0MHpNMzUyIDEwNGE0MCA0MCAwIDAwLTgwIDB2NDBoNDBhNDAgNDAgMCAwMDQwLTQweiI+PC9wYXRoPjxwYXRoIGZpbGw9JyMyY2QxNTYnIGQ9Ik04MCA0MTZhNjQgNjQgMCAwMDY0IDY0aDkyYTQgNCAwIDAwNC00VjI5MmE0IDQgMCAwMC00LTRIODhhOCA4IDAgMDAtOCA4ek0yNDAgMjUyVjE0NGgzMnYxMDhhNCA0IDAgMDA0IDRoMTQwYTQ3LjkzIDQ3LjkzIDAgMDAxNi0yLjc1QTQ4LjA5IDQ4LjA5IDAgMDA0NjQgMjA4di0xNmE0OCA0OCAwIDAwLTQ4LTQ4aC00MC41NGEyIDIgMCAwMS0xLjctM0E3MiA3MiAwIDAwMjU2IDU4LjgyIDcyIDcyIDAgMDAxMzguMjQgMTQxYTIgMiAwIDAxLTEuNyAzSDk2YTQ4IDQ4IDAgMDAtNDggNDh2MTZhNDguMDkgNDguMDkgMCAwMDMyIDQ1LjI1QTQ3LjkzIDQ3LjkzIDAgMDA5NiAyNTZoMTQwYTQgNCAwIDAwNC00em0zMi0xNDhhNDAgNDAgMCAxMTQwIDQwaC00MHptLTc0Ljg2LTM5LjlBNDAgNDAgMCAwMTI0MCAxMDR2NDBoLTQwYTQwIDQwIDAgMDEtMi44Ni03OS44OXpNMjc2IDQ4MGg5MmE2NCA2NCAwIDAwNjQtNjRWMjk2YTggOCAwIDAwLTgtOEgyNzZhNCA0IDAgMDAtNCA0djE4NGE0IDQgMCAwMDQgNHoiPjwvcGF0aD48L3N2Zz4=");
 }
 
 ul {
@@ -249,6 +272,7 @@ a:visited {
   align-items: center;
   will-change: filter;
   transition: filter 0.25s;
+  text-align: center;
 }
 
 .checkout-name-best {
@@ -265,6 +289,7 @@ a:visited {
   transition: filter 0.25s;
   color: #f5f7fa;
   background-color: #2cd156;
+  text-align: center;
 }
 
 
@@ -401,6 +426,11 @@ div.divider {
   margin-right: 24px;
 }
 
+.mv-6 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 @media (min-width: 900px) {
   .lg-mh-6 {
     margin-left: 24px;
@@ -461,7 +491,7 @@ div.divider {
   justify-content: space-evenly;
   align-items: center;
   padding: 24px;
-  background-color: #e4e9ee;
+  background-color: #e9edf1;
   border-radius: 12px;
 }
 
@@ -471,17 +501,28 @@ div.divider {
   }
 }
 
+.benefits-card {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 24px;
+  background-color: #e9edf1;
+  border-radius: 12px;
+}
+
 .price-card-container {
   display: flex;
   width: 100%;
+  max-width: 1024px;
   gap: 32px;
-  align-items: center;
+  align-items: start;
   flex-direction: row;
 }
 
 @media (max-width: 900px) {
   .price-card-container {
     flex-direction: column;
+    align-items: center;
     margin-top: 48px;
   }
 }
@@ -510,13 +551,9 @@ div.divider {
 }
 
 .bonus-title {
-  margin-top: 52px;
+  margin-top: 56px;
   width: 100%;
   align-items: center;
-  padding: 24px;
-  border: 8px solid #c9b469;
-  border-radius: 16px;
-  box-shadow: 0 10px 15px -6px #c9b469;
 }
 
 .warranty {
